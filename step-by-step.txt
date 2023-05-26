@@ -1,0 +1,57 @@
+===========================================================================================
+Step by step membangun proyek NiceList by Raihan Allaam menggunakan Vite, React JS, AntD
+===========================================================================================
+Catatan: agar tidak terjadi error, gunakan versi teknologi yang sama.
+===========================================================================================
+1. Install Node js versi 18.16.0 (LTS)
+2. Install VS Code Extension
+   - Prettier code formatter
+   - ES7 + React/Redux/React-Native snippets (gunakan snippets "rafce" saat membuat component baru) 
+3. Buat folder "my project"
+   - Lalu buka cmd di folder tersebut
+4. Install Vite
+   > npm create vite@4.3.1		(kalo yang terbaru: vite@latest)
+     - beri nama project : project_nicelist
+     - pilih teknologi	 : react without typescript
+   > cd project_nicelist
+   > npm install
+5. Install React Router DOM
+   > npm install react-router-dom@6.11.2	(kalo yang terbaru: npm install react-router-dom)
+6. Install Ant Design
+   > npm install antd@5.5.1		(kalo yang terbaru: npm install antd)
+   > npm run dev				(kalo mau expose: npm run dev -- --host) *pakai Network yang terakhir
+7. Konfigurasi Prettier
+   - Masuk menu Settings, lalu ketik "Prettier: Single Quote", unceklis Jsx Single Quote & Single Quote, agar memakai kutip dua (") bukan satu (').
+   - Masuk menu Settings, lalu ketik "Prettier: Print Width", isi dengan 999, agar saat Prettier merapikan code tidak buat baris baru, tetapi memanjang.
+   - Cara format dokumen: CTRL + SHIFT + P, lalu pilih Format Document with Prettier. Atau sebagai alternatif aktifkan fitur format on save.
+8. Setup awal
+   - ATUR BrowserRouter di		src/main.jsx				
+   - ATUR 						src/App.jsx					(app container)
+   - HAPUS						src/App.css					
+   - ATUR						src/index.css 				(basic app style, reset css disini, hapus yang tidak penting)
+   - SIMPAN semua asset di		src/assets/..here..
+   - BUAT wadah asset			src/assets/index.js
+   - BUAT components di			src/components/..here..		(gunakan snippets "rafce")
+   - BUAT wadah componens		src/components/index.js
+   - ATUR						index.html					(atur favicon dan judul web disini)
+9. Start coding with AntD Components
+10. Production
+	- Problem: Built application shows blank page (https://stackoverflow.com/questions/72005194/vue-3-vite-built-application-shows-blank-page)
+    - Solution: Buka file "vite.config.js", tambahkan --> base: './' di dalam export default defineConfig
+    > npm run build
+11. Selesai
+===========================================================================================
+Read more:
+- https://vitejs.dev/guide/
+- https://reactrouter.com/en/main
+- https://ant.design/docs/react/introduce
+- How to use React Router DOM
+  > https://www.youtube.com/watch?v=IUkAJUgUHEM
+- Offline web apps bundled into a single HTML file that you can double-click and open directly in your web browser, no server needed.
+  > https://stackoverflow.com/questions/67031295/how-to-open-a-static-website-in-localhost-but-generated-with-vite-and-without-ru
+  > https://github.com/richardtallent/vite-plugin-singlefile
+===========================================================================================
+Note:
+- Link repository proyek ini: https://github.com/alamehan/nice-list-web
+- Setelah di build push ke: https://github.com/alamehan/alamehan.github.io
+- NiceList merupakan salah satu project Alamehan.github.io
