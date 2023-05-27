@@ -17,7 +17,7 @@ function MenuHere() {
 		<div>
 			{/* ---------------------------------- Logo ---------------------------------- */}
 			<div className="css-logo">
-				<img src="public/logo-clean-nicelist.svg" />
+				<img src="./logo-clean-nicelist.svg" />
 			</div>
 
 			{/* ---------------------------------- Menu ---------------------------------- */}
@@ -123,7 +123,7 @@ function WatermarkHere() {
 	return (
 		<div className="css-alamehan">
 			<a href="https://alamehan.github.io/" target="_blank">
-				<img src="public/memoji-alamehan.png" style={{ width: "96px" }} />
+				<img src="./memoji-alamehan.png" style={{ width: "96px" }} />
 			</a>
 		</div>
 	);
@@ -147,7 +147,7 @@ const ContainerProd = () => {
 			<Layout style={collapsed ? (window.innerWidth < 768 ? { marginLeft: 0 } : { marginLeft: 72 }) : { marginLeft: 200 }} >
 				<Header className="css-header">
 					<Button className="css-btn-collapse" type="text" icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />} onClick={() => setCollapsed(!collapsed)} />
-					<a href="https://github.com/alamehan/nice-list-web" target="_blank"><img src="public/link-github.svg" style={{ margin: "26px 24px 0 0" }}></img></a>
+					<a href="https://github.com/alamehan/nice-list-web" target="_blank"><img src="./link-github.svg" style={{ margin: "26px 24px 0 0" }}></img></a>
 				</Header>
 				<Content style={{ margin: "24px 16px" }}>
 					<ContentHere />
