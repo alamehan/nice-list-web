@@ -1,0 +1,13 @@
+Jadi gini, ada masalah di routing. Makanya dibuat 2 versi: ContainerDev & ContainerProd.
+
+Yang Dev itu ya buat di run saat development.
+Yang Prod itu buat di deploy pada saat production.
+
+Contoh perbedaan routing:
+Kalo di Dev   ---> key: "/life-advice"
+Kalo di Prod  ---> key: "/projects/nice-list-web/life-advice" (ini menyesuaikan dengan struktur folder di root folder alamehan personal website)
+
+Buat sementara pake solusi ini dulu. Kedepannya akan dicarikan solusi yang lebih baik.
+
+Jangan lupa, pas production, buka dulu file "App.jsx" lalu ganti yang Dev ke Prod.
+
