@@ -147,7 +147,7 @@ const SideMenu = () => {
 			<Layout style={collapsed ? (window.innerWidth < 768 ? { marginLeft: 0 } : { marginLeft: 72 }) : { marginLeft: 200 }} >
 				<Header className="css-header">
 					<Button className="css-btn-collapse" type="text" icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />} onClick={() => setCollapsed(!collapsed)} />
-					<a href="https://github.com/alamehan/" target="_blank"><img src="src/assets/link-github.svg" style={{ margin: "26px 24px 0 0" }}></img></a>
+					<a href="https://github.com/alamehan/nice-list-web" target="_blank"><img src="src/assets/link-github.svg" style={{ margin: "26px 24px 0 0" }}></img></a>
 				</Header>
 				<Content style={{ margin: "24px 16px" }}>
 					<ContentHere />
